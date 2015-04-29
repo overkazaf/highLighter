@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+</style>
+</head>
+<body>
+	<!-- 模态框（Modal） -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" 
+   aria-labelledby="myModalLabel" aria-hidden="true">
+   <div class="modal-dialog" >
+      <div class="modal-content">
+         <div class="modal-header">
+            <button type="button" class="close" 
+               data-dismiss="modal" aria-hidden="true">
+                  &times;
+            </button>
+            <h4 class="modal-title" id="myModalLabel">
+               模态框（Modal）标题
+            </h4>
+         </div>
+         <div class="modal-body">
+            <pre class="pre-scrollable" contentEditable>
+            		sdafsadfasdf
+            		dsfasdf
+            		<samp>This text is meant to be treated as sample output from a computer program.</samp>
+            		dsfasdf
+            		sdafsadfasdf
+            		dsfasdf
+            		sdafsadfasdf
+            		dsfasdf
+            		sdafsadfasdf
+            		dsfasdf
+            		sdafsadfasdf
+            		dsfasdf
+            		sdafsadfasdf
+            		dsfasdf
+            		sdafsadfasdf
+            		dsfasdf
+            		sdafsadfasdf
+            		dsfasdf
+            		sdafsadfasdf
+            		dsfasdf
+            		sdafsadfasdf
+            		dsfasdf
+            		sdafsadfasdf
+            		dsfasdf
+            		sdafsadfasdf
+            		dsfasdf
+            		sdafsadfasdf
+            		dsfasdf
+            		sdafsadfasdf
+            		dsfasdf
+            		sdafsadfasdf
+            		dsfasdf
+            	</pre>
+         </div>
+         <div class="modal-footer">
+            <button type="button" class="btn btn-default" 
+               data-dismiss="modal">关闭
+            </button>
+            <button type="button" class="btn btn-primary">
+               提交更改
+            </button>
+         </div>
+      </div><!-- /.modal-content -->
+</div><!-- /.modal -->
+</body>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery-litelighter.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript">
+	$(function (){
+		$('#myModal').find('.modal-dialog').css({
+			width : '960px'
+		}).end().modal('show');
+		var oPre = $('#myModal').find('pre.pre-scrollable');
+		oPre.text($(document.body).html()).litelighter({
+		    clone: true,
+		    style : 'dark',
+		    language: 'html'
+		});
+
+	});
+</script>
+</html>
