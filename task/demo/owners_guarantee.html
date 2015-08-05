@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>业主保障</title>
+<meta name="Keywords" content="">
+<meta name="Description" content="">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="content-style-type" content="text/css">
+<meta http-equiv="content-script-type" content="text/javascript">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7">
+<meta name="360-site-verification" content="134443f12d4861997d16fc0e589f6dfb">
+<link href="css/common_tbs.css" rel="stylesheet" type="text/css" />
+<link href="css/guarantee.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery-1.9.1-min.js"></script>
+<script>
+	$(function(){
+		resize();
+			
+		$(window).resize(function(){
+			resize();
+		});
+		$(".photo_cosle").bind("click",function(){
+			$(".photo_bottom").slideUp("slow");
+			$('.photo_bottom_sou').show();
+		});
+		$(".photo_bottom_sou").on('click',function(){
+			$(".photo_bottom").slideDown();
+			$('.photo_bottom_sou').hide();
+	
+		});
+	});
+	
+	function resize(){
+		var _w = $(window).width();
+		var h = $(".mainlist").height();
+		var _h = h+20;
+		$(".s_06bt").css({"height":_h});
+		if(_w>1440){
+			$(".save_banner").css({"width":"1440px","height":"141px","margin":"0px auto"});
+		}else{
+			$(".save_banner").css({"min-width":"1280px","min-height":"141px","width":_w,"margin":"0px auto"});
+		}
+	}
+</script>
+<link type="text/css" rel="stylesheet" href="css/zhaobiao.css" />
+<link rel="stylesheet" type="text/css" href="css/save_money2.css" />
+<link rel="stylesheet" type="text/css" href="css/base.css" />
+<script type="text/javascript" src="js/base.js"></script>
+</head>
+
+<body>
+<div id="topGuide">
+  <div id="user_navi_info" class="topCon">
+    <input type="hidden" id="affID" value="0">
+    <input type="hidden" id="affDomain" value="0">
+    <ul class="user_l">
+      <li> <img alt="" src="images/location.png" style="height:10px; " /> <a style="font-size:14px; padding-right: 0px; " href="#">南通</a> <a style="color:#f60; font-size:14px; padding-left: 0px;" href="#" title="点击切换城市">[切换城市]</a> </li>
+    </ul>
+    <!-- 右侧联系方式 -->
+    <ul class="user_r">
+      <li style="background:#f8f8f8;"><a href="#" rel="nofollow">登录</a></li>
+      <li><a href="#" rel="nofollow">注册</a></li>
+    </ul>
+  </div>
+</div>
+<div id="header">
+  <div class="header_con">
+    <div class="logo"> <a href="javascript:void(0)"> <img src="images/logo.jpg" alt="" title=""> </a> </div>
+    <div id="s_box">
+      <input type="hidden" id="s_hide" name="s_type" value="3">
+      <div class="search mnitr_24" data-p="mnitr_24" data-getdata="p" data-target="mnitr_24">
+        <label for="s_text">
+          <input type="text" name="like" id="s_text" onkeypress="if (event.keyCode == 13) {do_search();return false;}" value="">
+        </label>
+      </div>
+      <a href="javascript:void(0);" onclick="do_search();return false;" class="s_but"> 搜装修公司 </a> <a href="javascript:void(0);" class="s_al_but"> 搜案例效果图 </a> </div>
+    <!--s_box END--> 
+    
+    <!-- tel -->
+    <div id="s_tel"> <span>咨询热线：400-8090-405</span> </div>
+  </div>
+</div>
+<div id="navi">
+  <ul id="globalNavi">
+    <li><a alt="首页" title="首页" class="now" href="#">首页</a></li>
+    <li><a alt="装修案例效果图" title="装修案例效果图" class="" href="#">装修案例效果图</a></li>
+    <li><a alt="省钱装修" title="省钱装修" href="#">省钱装修</a><!--<img src="images/hot.png" class="newI">--></li>
+    <li><a alt="找装修公司" title="找装修公司" href="#">找装修公司</a><!--<img src="images/kb.png" class="newI">--></li>
+    <li><a alt="免费设计与报价" title="装修案例" href="#">免费设计与报价</a></li>
+    <li> <a alt="找建材" title="找建材" href="#">找建材</a> </li>
+    <li class="nav-rs fls" > <a href="#" class="now">免费获得四份装修报价 <img src="images/ico_down.png"></a>
+      <div class="apply-wrap form-item">
+        <p class="top">比其他平台<span class="c1">多一份报价</span>选择<br>
+          比其他业主<span class="c2">多一份实惠</span>选择</p>
+        <p class="input-wrap mt15">
+          <input id="applyuser" class="inpt-user" type="text" value="请输入您的称呼" data-value="请输入您的称呼">
+        </p>
+        <p class="input-wrap">
+          <input id="applytel" class="inpt-tel inptshang" type="text" value="请输入您的联系号码" data-value="请输入您的联系号码">
+        </p>
+        <p style="display:none;" class="err-tel errshang"><i class="err-ico"></i>
+          <sapn>手机号码不可以为空</sapn>
+        </p>
+        <button class="submit-btn" flag="1">立即申请</button>
+        <div id="orderInfoWrap" class="order-info-wrap">
+          <ul class="order-info">
+            <li><span>1分钟前</span>杭州黄先生接受了此服务</li>
+            <li><span>2分钟前</span>上海李先生接受了此服务</li>
+            <li><span>3分钟前</span>杭州黄先生接受了此服务</li>
+            <li><span>4分钟前</span>上海李先生接受了此服务</li>
+          </ul>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
+
+
+<div id="guarantee_wrapper"> 
+  <div class="top_w">
+    <div class="top">
+      <div class="yahei">
+              帮助业主解决装修问题
+          </div>
+    </div>
+  </div>
+
+  <div id="guarantee_banner_wrapper">
+      <div id="guarantee_banner"></div>
+      <div id="guarantee_bottom">
+         <a href=""></a>            
+      </div>
+  </div>
+
+  <div id="guarantee_container">
+      <div id="guarantee_container_inside">
+          <img src="images/home/jing_guarantee_container1.png">
+          <img src="images/home/jing_guarantee_container2.png">
+          <img src="images/home/jing_guarantee_container3.png">
+          <img src="images/home/jing_guarantee_container4.png">
+          <img src="images/home/jing_guarantee_container5.png">
+          <img src="images/home/jing_guarantee_container6.png">
+      </div>
+  </div>
+  <div id="guarantee_title">
+    <div class="title">
+      <h1>最新申请装修服务</h1>
+    </div>
+  </div>
+  <div id="guarantee_table">
+    <div class="s_06">
+      <div class="w1100">
+        <div class="mainlist">
+            <div class="mainlists">
+                <div class="mainlists1">项目类型</div>
+                  <div class="mainlists1">装修预算</div>
+                  <div class="mainlists1">建筑面积</div>
+                  <div class="mainlists2">装修类型</div>
+                  <div class="mainlists1">装修小区</div>
+                  <div class="mainlists1">发布时间</div>
+              </div>
+              
+              <div class="mainlists mainlistc">
+                <div class="mainlists1">普通户型</div>
+                  <div class="mainlists1">30-50万</div>
+                  <div class="mainlists1">250㎡</div>
+                  <div class="mainlists2">全包</div>
+                  <div class="mainlists1">金色城邦</div>
+                  <div class="mainlists1">2015-08-02</div>
+              </div>
+              <div class="mainlists mainlistc">
+                <div class="mainlists1">普通户型</div>
+                  <div class="mainlists1">30-50万</div>
+                  <div class="mainlists1">250㎡</div>
+                  <div class="mainlists2">全包</div>
+                  <div class="mainlists1">金色城邦</div>
+                  <div class="mainlists1">2015-08-02</div>
+              </div>
+              <div class="mainlists mainlistc">
+                <div class="mainlists1">普通户型</div>
+                  <div class="mainlists1">30-50万</div>
+                  <div class="mainlists1">250㎡</div>
+                  <div class="mainlists2">全包</div>
+                  <div class="mainlists1">金色城邦</div>
+                  <div class="mainlists1">2015-08-02</div>
+              </div>
+              <div class="mainlists mainlistc">
+                <div class="mainlists1">普通户型</div>
+                  <div class="mainlists1">30-50万</div>
+                  <div class="mainlists1">250㎡</div>
+                  <div class="mainlists2">全包</div>
+                  <div class="mainlists1">金色城邦</div>
+                  <div class="mainlists1">2015-08-02</div>
+              </div>
+              <div class="mainlists mainlistc">
+                <div class="mainlists1">普通户型</div>
+                  <div class="mainlists1">30-50万</div>
+                  <div class="mainlists1">250㎡</div>
+                  <div class="mainlists2">全包</div>
+                  <div class="mainlists1">金色城邦</div>
+                  <div class="mainlists1">2015-08-02</div>
+              </div>
+              <div class="mainlists mainlistc">
+                <div class="mainlists1">普通户型</div>
+                  <div class="mainlists1">30-50万</div>
+                  <div class="mainlists1">250㎡</div>
+                  <div class="mainlists2">全包</div>
+                  <div class="mainlists1">金色城邦</div>
+                  <div class="mainlists1">2015-08-02</div>
+              </div>
+              <div class="mainlists mainlistc">
+                <div class="mainlists1">普通户型</div>
+                  <div class="mainlists1">30-50万</div>
+                  <div class="mainlists1">250㎡</div>
+                  <div class="mainlists2">全包</div>
+                  <div class="mainlists1">金色城邦</div>
+                  <div class="mainlists1">2015-08-02</div>
+              </div>
+              <div class="mainlists mainlistc">
+                <div class="mainlists1">普通户型</div>
+                  <div class="mainlists1">30-50万</div>
+                  <div class="mainlists1">250㎡</div>
+                  <div class="mainlists2">全包</div>
+                  <div class="mainlists1">金色城邦</div>
+                  <div class="mainlists1">2015-08-02</div>
+              </div>
+              <div class="mainlists mainlistc">
+                <div class="mainlists1">普通户型</div>
+                  <div class="mainlists1">30-50万</div>
+                  <div class="mainlists1">250㎡</div>
+                  <div class="mainlists2">全包</div>
+                  <div class="mainlists1">金色城邦</div>
+                  <div class="mainlists1">2015-08-02</div>
+              </div>
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="guarantee_banner_wrapper_bottom">
+      <div id="guarantee_banner_bottom"></div>
+      <div id="guarantee_bottom_bottom">
+         <a href=""></a>            
+      </div>
+  </div>
+</div>
+
+
+<!-- content_zb-->
+<div id="footer">
+  <p class="font12 tbsInfo"> <a rel="nofollow" target="_blank" href="#"> 关于我们 </a> | <a rel="nofollow" target="_blank" href="#"> 联系我们 </a> | <a rel="nofollow" target="_blank" href="#"> 友情链接 </a> | <a rel="nofollow" href="#" target="_blank"> 帮助中心 </a> | <a rel="nofollow" target="_blank" href="#"> 意见反馈 </a> | <a rel="nofollow" href="#" target="_blank"> 高薪聘请</a> | <a href="#" target="_blank"> 法律声明 </a> </p>
+  <p class="font12"> <br>
+    © 2015 Maozs.com &nbsp; 苏州大脸猫网络科技有限公司 &nbsp; 保留所有版权 <br>
+  </p>
+  <p class="font12"> <a href="#">互联网装修</a>&nbsp;&nbsp;&nbsp; <a href="#">中国装修网</a>&nbsp;&nbsp;&nbsp; <a href="#">苏ICP备15010766号-1</a> </p>
+  <p class="font12"> <a rel="nofollow" class="fc1" href="#" target="_blank"></a> <a rel="nofollow" class="fc2" href="#" target="_blank"></a> <a rel="nofollow" class="fc3" href="#" target="_blank"></a> <a rel="nofollow" class="fc4" href="#" target="_blank"></a> </p>
+</div>
+</body>
+</html>

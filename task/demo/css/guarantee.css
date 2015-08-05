@@ -1,0 +1,40 @@
+@charset utf-8;
+#guarantee_wrapper{
+	width:100%;
+	min-width:1100px;
+}
+
+#guarantee_wrapper .top_w{
+	width:100%;
+	min-width:1100px;
+	height:55px;
+	background:#fff;
+}
+
+#guarantee_wrapper .top_w .top{
+	width:1100px;
+	height:55px;
+	margin:0 auto;
+	background:url('../images/guarantee/yzbz.png') no-repeat;
+}
+
+#guarantee_wrapper .top_w .top .yahei{float:right;font-style:italic;font-size:14px;color:#818080;font-weight:bold;padding-top:25px;}
+#guarantee_banner_wrapper{width:100%;min-width:1100px;height:408px;background:url(../images/home/jing_guarantee_banner.png) repeat-x;}
+#guarantee_banner{width:1100px;height:408px;margin:0 auto;background:url(../../images/home/jing_guarantee_banner.png) no-repeat;background-size:100%;}
+#guarantee_container{width:100%;min-width:1100px;background:#fff;}
+#guarantee_container_inside{width:1100px;margin:50px auto;}
+#guarantee_container_inside img{margin-top:-3px;}
+#guarantee_bottom,
+#guarantee_bottom_bottom{position:relative;width:1100px;height:100px;margin:0 auto;background:url(../images/home/jing_guarantee_bottom_bg.png) no-repeat;background-size:100%;}
+
+#guarantee_bottom_bottom{margin-bottom:100px;}
+
+#guarantee_bottom a,
+#guarantee_bottom_bottom a{position:absolute;width:283px;height:70px;top:0;left:403px;}
+
+#guarantee_title {width:100%;min-width:1100px;background:#fff;margin-top:-50px;}
+#guarantee_title .title {width:100%;}
+#guarantee_title .title h1{width:1100px;margin:0 auto;font-size:28px;color:#3f3f3f;font-weight:normal;font-family:"Microsoft Yahei"}
+#guarantee_table{width:100%;min-width:1100px;background:#fff;}
+#guarantee_table .mainlist{margin:0 auto;float:none;border-top:1px solid #aaa;}
+#guarantee_table .w1100{margin:0 auto;width:1100px;}

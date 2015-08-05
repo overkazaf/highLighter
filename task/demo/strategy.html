@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>装修攻略</title>
+<meta name="Keywords" content="">
+<meta name="Description" content="">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="content-style-type" content="text/css">
+<meta http-equiv="content-script-type" content="text/javascript">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7">
+<meta name="360-site-verification" content="134443f12d4861997d16fc0e589f6dfb">
+<link href="css/common_tbs.css" rel="stylesheet" type="text/css" />
+<link href="css/strategy.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery-1.9.1-min.js"></script>
+<script>
+	$(function(){
+		resize();
+			
+		$(window).resize(function(){
+			resize();
+		});
+		$(".photo_cosle").bind("click",function(){
+			$(".photo_bottom").slideUp("slow");
+			$('.photo_bottom_sou').show();
+		});
+		$(".photo_bottom_sou").on('click',function(){
+			$(".photo_bottom").slideDown();
+			$('.photo_bottom_sou').hide();
+		});
+
+    $('#tab-list').on('mouseover', 'li', function (){
+      var contents = $('#strategy_wrapper_tab').find('.contents'),
+          index = $(this).index();
+
+        $(this).addClass('active').siblings().removeClass('active');
+        contents.hide().eq(index).show();
+    });
+
+    $('#tab-list>li').first().trigger('mouseover');
+	});
+	
+	function resize(){
+		var _w = $(window).width();
+		var h = $(".mainlist").height();
+		var _h = h+20;
+		$(".s_06bt").css({"height":_h});
+		if(_w>1440){
+			$(".save_banner").css({"width":"1440px","height":"141px","margin":"0px auto"});
+		}else{
+			$(".save_banner").css({"min-width":"1280px","min-height":"141px","width":_w,"margin":"0px auto"});
+		}
+	}
+</script>
+<link type="text/css" rel="stylesheet" href="css/zhaobiao.css" />
+<link rel="stylesheet" type="text/css" href="css/save_money2.css" />
+<link rel="stylesheet" type="text/css" href="css/base.css" />
+<!-- <script type="text/javascript" src="js/base.js"></script> -->
+</head>
+
+<body>
+<div id="topGuide">
+  <div id="user_navi_info" class="topCon">
+    <input type="hidden" id="affID" value="0">
+    <input type="hidden" id="affDomain" value="0">
+    <ul class="user_l">
+      <li> <img alt="" src="images/location.png" style="height:10px; " /> <a style="font-size:14px; padding-right: 0px; " href="#">南通</a> <a style="color:#f60; font-size:14px; padding-left: 0px;" href="#" title="点击切换城市">[切换城市]</a> </li>
+    </ul>
+    <!-- 右侧联系方式 -->
+    <ul class="user_r">
+      <li style="background:#f8f8f8;"><a href="#" rel="nofollow">登录</a></li>
+      <li><a href="#" rel="nofollow">注册</a></li>
+    </ul>
+  </div>
+</div>
+<div id="header">
+  <div class="header_con">
+    <div class="logo"> <a href="javascript:void(0)"> <img src="images/logo.jpg" alt="" title=""> </a> </div>
+    <div id="s_box">
+      <input type="hidden" id="s_hide" name="s_type" value="3">
+      <div class="search mnitr_24" data-p="mnitr_24" data-getdata="p" data-target="mnitr_24">
+        <label for="s_text">
+          <input type="text" name="like" id="s_text" onkeypress="if (event.keyCode == 13) {do_search();return false;}" value="">
+        </label>
+      </div>
+      <a href="javascript:void(0);" onclick="do_search();return false;" class="s_but"> 搜装修公司 </a> <a href="javascript:void(0);" class="s_al_but"> 搜案例效果图 </a> </div>
+    <!--s_box END--> 
+    
+    <!-- tel -->
+    <div id="s_tel"> <span>咨询热线：400-8090-405</span> </div>
+  </div>
+</div>
+<div id="navi">
+  <ul id="globalNavi">
+    <li><a alt="首页" title="首页" class="now" href="#">首页</a></li>
+    <li><a alt="装修案例效果图" title="装修案例效果图" class="" href="#">装修案例效果图</a></li>
+    <li><a alt="省钱装修" title="省钱装修" href="#">省钱装修</a><!--<img src="images/hot.png" class="newI">--></li>
+    <li><a alt="找装修公司" title="找装修公司" href="#">找装修公司</a><!--<img src="images/kb.png" class="newI">--></li>
+    <li><a alt="免费设计与报价" title="装修案例" href="#">免费设计与报价</a></li>
+    <li> <a alt="找建材" title="找建材" href="#">找建材</a> </li>
+    <li class="nav-rs fls" > <a href="#" class="now">免费获得四份装修报价 <img src="images/ico_down.png"></a>
+      <div class="apply-wrap form-item">
+        <p class="top">比其他平台<span class="c1">多一份报价</span>选择<br>
+          比其他业主<span class="c2">多一份实惠</span>选择</p>
+        <p class="input-wrap mt15">
+          <input id="applyuser" class="inpt-user" type="text" value="请输入您的称呼" data-value="请输入您的称呼">
+        </p>
+        <p class="input-wrap">
+          <input id="applytel" class="inpt-tel inptshang" type="text" value="请输入您的联系号码" data-value="请输入您的联系号码">
+        </p>
+        <p style="display:none;" class="err-tel errshang"><i class="err-ico"></i>
+          <sapn>手机号码不可以为空</sapn>
+        </p>
+        <button class="submit-btn" flag="1">立即申请</button>
+        <div id="orderInfoWrap" class="order-info-wrap">
+          <ul class="order-info">
+            <li><span>1分钟前</span>杭州黄先生接受了此服务</li>
+            <li><span>2分钟前</span>上海李先生接受了此服务</li>
+            <li><span>3分钟前</span>杭州黄先生接受了此服务</li>
+            <li><span>4分钟前</span>上海李先生接受了此服务</li>
+          </ul>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
+
+
+<div id="strategy_wrapper"> 
+  <div class="top_w">
+    <div class="top">
+    </div>
+  </div>
+  
+  <div id="strategy_banner_wrapper">
+      <div id="strategy_banner">
+        <div id="strategy_wrapper_tab">
+          <ul id="tab-list">
+            <li>装修经验</li>
+            <li>装修风水</li>
+            <li>装修宝典</li>
+          </ul>
+          <div class="contents">
+            <ul class="info-list">
+              <li class="info-list-item">
+                <div class="detail">
+                  <div class="detail-header">
+                    <span class="detail-title">你必须要学的招财风水</span>
+                    <span class="detail-date">2015-08-02</span>
+                  </div>
+                  <div class="detail-body">
+                    <p class="detail-desc">
+                      &nbsp;&nbsp;&nbsp;&nbsp;所谓君子爱财，生财有道。金钱能够给我们带来丰富的物质生活，人人都渴望金钱，于是我们就努力工作，如果努力工作再加上招财的风水，那肯定有益无害喽。小编来跟大家一起来学点招财风水~
+                    </p>
+                    <ul class="detail-imglist">
+                      <li class="detail-imglist-item">
+                        <img src="images/strategy/sample1.png">
+                      </li>
+                      <li class="detail-imglist-item">
+                        <img src="images/strategy/sample2.png">
+                      </li>
+                      <li class="detail-imglist-item">
+                        <img src="images/strategy/sample3.png">
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+
+              <li class="info-list-item">
+                <div class="detail">
+                  <div class="detail-header">
+                    <span class="detail-title">走廊装修风水</span>
+                    <span class="detail-date">2015-08-02</span>
+                  </div>
+                  <div class="detail-body">
+                    <p class="detail-desc">
+                      &nbsp;&nbsp;&nbsp;&nbsp;很多人在装修的时候不会非常地注意风水的问题，要的就是一个对家人身体健康、有利于家人财运的风水。但是很多的人往往只注意那些重要的家居场合，对于过道这种简直就直接的忽视了，但是这些风水也是我们需要注意的地方。那么，小编就带大家看一下那些需要我们注意的过道的风水。
+                    </p>
+                    <ul class="detail-imglist">
+                      <li class="detail-imglist-item">
+                        <img src="images/strategy/sample4.png">
+                      </li>
+                      <li class="detail-imglist-item">
+                        <img src="images/strategy/sample5.png">
+                      </li>
+                      <li class="detail-imglist-item">
+                        <img src="images/strategy/sample6.png">
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+
+              <li class="info-list-item">
+                <div class="detail">
+                  <div class="detail-header">
+                    <span class="detail-title">你必须要学的招财风水</span>
+                    <span class="detail-date">2015-08-02</span>
+                  </div>
+                  <div class="detail-body">
+                    <p class="detail-desc">
+                      &nbsp;&nbsp;&nbsp;&nbsp;所谓君子爱财，生财有道。金钱能够给我们带来丰富的物质生活，人人都渴望金钱，于是我们就努力工作，如果努力工作再加上招财的风水，那肯定有益无害喽。小编来跟大家一起来学点招财风水~
+                    </p>
+                    <ul class="detail-imglist">
+                      <li class="detail-imglist-item">
+                        <img src="images/strategy/sample1.png">
+                      </li>
+                      <li class="detail-imglist-item">
+                        <img src="images/strategy/sample2.png">
+                      </li>
+                      <li class="detail-imglist-item">
+                        <img src="images/strategy/sample3.png">
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+
+              <li class="info-list-item">
+                <div class="detail">
+                  <div class="detail-header">
+                    <span class="detail-title">走廊装修风水</span>
+                    <span class="detail-date">2015-08-02</span>
+                  </div>
+                  <div class="detail-body">
+                    <p class="detail-desc">
+                      &nbsp;&nbsp;&nbsp;&nbsp;很多人在装修的时候不会非常地注意风水的问题，要的就是一个对家人身体健康、有利于家人财运的风水。但是很多的人往往只注意那些重要的家居场合，对于过道这种简直就直接的忽视了，但是这些风水也是我们需要注意的地方。那么，小编就带大家看一下那些需要我们注意的过道的风水。
+                    </p>
+                    <ul class="detail-imglist">
+                      <li class="detail-imglist-item">
+                        <img src="images/strategy/sample4.png">
+                      </li>
+                      <li class="detail-imglist-item">
+                        <img src="images/strategy/sample5.png">
+                      </li>
+                      <li class="detail-imglist-item">
+                        <img src="images/strategy/sample6.png">
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+
+              <li class="info-list-item">
+                <div class="detail">
+                  <div class="detail-header">
+                    <span class="detail-title">你必须要学的招财风水</span>
+                    <span class="detail-date">2015-08-02</span>
+                  </div>
+                  <div class="detail-body">
+                    <p class="detail-desc">
+                      &nbsp;&nbsp;&nbsp;&nbsp;所谓君子爱财，生财有道。金钱能够给我们带来丰富的物质生活，人人都渴望金钱，于是我们就努力工作，如果努力工作再加上招财的风水，那肯定有益无害喽。小编来跟大家一起来学点招财风水~
+                    </p>
+                    <ul class="detail-imglist">
+                      <li class="detail-imglist-item">
+                        <img src="images/strategy/sample1.png">
+                      </li>
+                      <li class="detail-imglist-item">
+                        <img src="images/strategy/sample2.png">
+                      </li>
+                      <li class="detail-imglist-item">
+                        <img src="images/strategy/sample3.png">
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+
+              <li class="info-list-item">
+                <div class="detail">
+                  <div class="detail-header">
+                    <span class="detail-title">走廊装修风水</span>
+                    <span class="detail-date">2015-08-02</span>
+                  </div>
+                  <div class="detail-body">
+                    <p class="detail-desc">
+                      &nbsp;&nbsp;&nbsp;&nbsp;很多人在装修的时候不会非常地注意风水的问题，要的就是一个对家人身体健康、有利于家人财运的风水。但是很多的人往往只注意那些重要的家居场合，对于过道这种简直就直接的忽视了，但是这些风水也是我们需要注意的地方。那么，小编就带大家看一下那些需要我们注意的过道的风水。
+                    </p>
+                    <ul class="detail-imglist">
+                      <li class="detail-imglist-item">
+                        <img src="images/strategy/sample4.png">
+                      </li>
+                      <li class="detail-imglist-item">
+                        <img src="images/strategy/sample5.png">
+                      </li>
+                      <li class="detail-imglist-item">
+                        <img src="images/strategy/sample6.png">
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="contents" style="display:none;">2</div>
+          <div class="contents" style="display:none;">3</div>
+
+
+          <!-- 分页 -->
+          <div class="page"><a href="http://www.qizuang.com/gonglue/fs?p=1">首页</a><a href="?p=1" class="current">1</a> <a href="?p=2">2</a><a href="?p=3">3</a><a href="?p=4">4</a><a href="?p=5">5</a><a href="?p=6">6</a><a href="?p=7">7</a><a href="?p=8">8</a><a href="?p=9">9</a><a href="?p=10">10</a><a href="http://www.qizuang.com/gonglue/fs?p=72">末页</a><a href="http://www.qizuang.com/gonglue/fs?p=2">下一页</a></div>
+        </div>
+
+
+
+        <div id="strategy_wrapper_aside">
+          <div class="rtel" style="float:none;">
+              <form class="secbox_form">
+                <h1>免费申请装修服务</h1>
+                <h2>获取4份设计与报价</h2>
+                <div class="int">
+                    <input type="text" name="name" placeholder="请输入您的姓名">
+                </div>
+                <div class="int">
+                    <input type="text" name="tel" placeholder="请输入正确的手机号码">
+                </div>
+                <div class="int">
+                    <a id="btnSub" href="javascript:void(0)">立即获取</a>
+                </div>
+              </form>
+              <p class="declare">
+              我们承诺：大脸猫提供<span class="danger">该项免费服务，绝不产生任何费用</span>，为了您的利益以及我们的口碑，您的隐私将被严格保密。
+              </p>
+          </div>
+
+          <div class="wenzrmain mt20">
+                <div class="wenzrtitle">优秀设计推荐</div>
+                <ul class="wenzhot">
+                  <li>
+                    <a href="" target="_blank">
+                      <img alt="教你如何在装修客厅时隔断餐厅" src="images/strategy/ext1.png" width="334" height="400">                
+                      <span>教你如何在装修客厅时隔断餐厅</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="" target="_blank">
+                      <img alt="油漆脱漆剂 你造吗" src="images/strategy/ext2.png" width="334" height="400">                
+                      <span>油漆脱漆剂 你造吗</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="" target="_blank">
+                      <img alt="装修卫生间最好使用金属隔断" src="images/strategy/ext3.png" width="334" height="400">                
+                      <span>装修卫生间最好使用金属隔断</span>
+                    </a>
+                  </li>
+                </ul>
+            </div>
+        </div>
+      </div>
+  </div>
+  <div class="wrapper_container clearfix">
+    
+  </div>
+</div>
+<!-- content_zb-->
+<div id="footer">
+  <p class="font12 tbsInfo"> <a rel="nofollow" target="_blank" href="#"> 关于我们 </a> | <a rel="nofollow" target="_blank" href="#"> 联系我们 </a> | <a rel="nofollow" target="_blank" href="#"> 友情链接 </a> | <a rel="nofollow" href="#" target="_blank"> 帮助中心 </a> | <a rel="nofollow" target="_blank" href="#"> 意见反馈 </a> | <a rel="nofollow" href="#" target="_blank"> 高薪聘请</a> | <a href="#" target="_blank"> 法律声明 </a> </p>
+  <p class="font12"> <br>
+    © 2015 Maozs.com &nbsp; 苏州大脸猫网络科技有限公司 &nbsp; 保留所有版权 <br>
+  </p>
+  <p class="font12"> <a href="#">互联网装修</a>&nbsp;&nbsp;&nbsp; <a href="#">中国装修网</a>&nbsp;&nbsp;&nbsp; <a href="#">苏ICP备15010766号-1</a> </p>
+  <p class="font12"> <a rel="nofollow" class="fc1" href="#" target="_blank"></a> <a rel="nofollow" class="fc2" href="#" target="_blank"></a> <a rel="nofollow" class="fc3" href="#" target="_blank"></a> <a rel="nofollow" class="fc4" href="#" target="_blank"></a> </p>
+</div>
+</body>
+</html>

@@ -1,0 +1,385 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>demo招标</title>
+<meta name="Keywords" content="">
+<meta name="Description" content="">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="content-style-type" content="text/css">
+<meta http-equiv="content-script-type" content="text/javascript">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7">
+<meta name="360-site-verification" content="134443f12d4861997d16fc0e589f6dfb">
+<link href="css/common_tbs.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery-1.9.1-min.js"></script>
+<script>
+	$(function(){
+		resize();
+			
+		$(window).resize(function(){
+			resize();
+		});
+		$(".photo_cosle").bind("click",function(){
+			$(".photo_bottom").slideUp("slow");
+			$('.photo_bottom_sou').show();
+		});
+		$(".photo_bottom_sou").on('click',function(){
+			$(".photo_bottom").slideDown();
+			$('.photo_bottom_sou').hide();
+	
+		});
+	});
+	
+	function resize(){
+		var _w = $(window).width();
+		var h = $(".mainlist").height();
+		var _h = h+20;
+		$(".s_06bt").css({"height":_h});
+		if(_w>1440){
+			$(".save_banner").css({"width":"1440px","height":"141px","margin":"0px auto"});
+		}else{
+			$(".save_banner").css({"min-width":"1280px","min-height":"141px","width":_w,"margin":"0px auto"});
+		}
+	}
+</script>
+<link type="text/css" rel="stylesheet" href="css/zhaobiao.css" />
+<link rel="stylesheet" type="text/css" href="css/save_money2.css" />
+<link rel="stylesheet" type="text/css" href="css/base.css" />
+<script type="text/javascript" src="js/base.js"></script>
+</head>
+
+<body>
+<div id="topGuide">
+  <div id="user_navi_info" class="topCon">
+    <input type="hidden" id="affID" value="0">
+    <input type="hidden" id="affDomain" value="0">
+    <ul class="user_l">
+      <li> <img alt="" src="images/location.png" style="height:10px; " /> <a style="font-size:14px; padding-right: 0px; " href="#">南通</a> <a style="color:#f60; font-size:14px; padding-left: 0px;" href="#" title="点击切换城市">[切换城市]</a> </li>
+    </ul>
+    <!-- 右侧联系方式 -->
+    <ul class="user_r">
+      <li style="background:#f8f8f8;"><a href="#" rel="nofollow">登录</a></li>
+      <li><a href="#" rel="nofollow">注册</a></li>
+    </ul>
+  </div>
+</div>
+<div class="side">
+  <div class="weixin">
+    <div class="ico-wx"></div>
+    <div class="wx-img"> <i class=""></i>
+            <p class="top">比其他平台<span class="c1">多一份报价</span>选择<br>
+              比其他业主<span class="c2">多一份实惠</span>选择</p>
+            <p class="input-wrap mt15">
+              <input id="applyuser" class="inpt-user" type="text" value="请输入您的称呼" data-value="请输入您的称呼">
+            </p>
+            <p class="input-wrap">
+              <input id="applytel" class="inpt-tel inptshang" type="text" value="请输入您的联系号码" data-value="请输入您的联系号码">
+            </p>
+            <p style="display:none;" class="err-tel errshang"><i class="err-ico"></i>
+              <sapn>手机号码不可以为空</sapn>
+            </p>
+            <button class="submit-btn" flag="1">立即申请</button>
+            <div id="orderInfoWrap" class="order-info-wrap">
+              <ul class="order-info">
+                <li><span>1分钟前</span>杭州黄先生接受了此服务</li>
+                <li><span>2分钟前</span>上海李先生接受了此服务</li>
+                <li><span>3分钟前</span>杭州黄先生接受了此服务</li>
+                <li><span>4分钟前</span>上海李先生接受了此服务</li>
+              </ul>
+            </div>
+    </div>
+  </div>
+</div>
+<div id="header">
+  <div class="header_con">
+    <div class="logo"> <a href="javascript:void(0)"> <img src="images/logo.jpg" alt="" title=""> </a> </div>
+    <div id="s_box">
+      <input type="hidden" id="s_hide" name="s_type" value="3">
+      <div class="search mnitr_24" data-p="mnitr_24" data-getdata="p" data-target="mnitr_24">
+        <label for="s_text">
+          <input type="text" name="like" id="s_text" onkeypress="if (event.keyCode == 13) {do_search();return false;}" value="">
+        </label>
+      </div>
+      <a href="javascript:void(0);" onclick="do_search();return false;" class="s_but"> 搜装修公司 </a> <a href="javascript:void(0);" class="s_al_but"> 搜案例效果图 </a> </div>
+    <!--s_box END--> 
+    
+    <!-- tel -->
+    <div id="s_tel"> <span>咨询热线：400-8090-405</span> </div>
+  </div>
+</div>
+<div id="navi">
+  <ul id="globalNavi">
+    <li><a alt="首页" title="首页" class="now" href="#">首页</a></li>
+    <li><a alt="装修案例效果图" title="装修案例效果图" class="" href="#">装修案例效果图</a></li>
+    <li><a alt="省钱装修" title="省钱装修" href="#">省钱装修</a><!--<img src="images/hot.png" class="newI">--></li>
+    <li><a alt="找装修公司" title="找装修公司" href="#">找装修公司</a><!--<img src="images/kb.png" class="newI">--></li>
+    <li><a alt="免费设计与报价" title="装修案例" href="#">免费设计与报价</a></li>
+    <li> <a alt="找建材" title="找建材" href="#">找建材</a> </li>
+    <li class="nav-rs fls" > <a href="#" class="now">免费获得四份装修报价 <img src="images/ico_down.png"></a>
+      <div class="apply-wrap form-item">
+        <p class="top">比其他平台<span class="c1">多一份报价</span>选择<br>
+          比其他业主<span class="c2">多一份实惠</span>选择</p>
+        <p class="input-wrap mt15">
+          <input id="applyuser" class="inpt-user" type="text" value="请输入您的称呼" data-value="请输入您的称呼">
+        </p>
+        <p class="input-wrap">
+          <input id="applytel" class="inpt-tel inptshang" type="text" value="请输入您的联系号码" data-value="请输入您的联系号码">
+        </p>
+        <p style="display:none;" class="err-tel errshang"><i class="err-ico"></i>
+          <sapn>手机号码不可以为空</sapn>
+        </p>
+        <button class="submit-btn" flag="1">立即申请</button>
+        <div id="orderInfoWrap" class="order-info-wrap">
+          <ul class="order-info">
+            <li><span>1分钟前</span>杭州黄先生接受了此服务</li>
+            <li><span>2分钟前</span>上海李先生接受了此服务</li>
+            <li><span>3分钟前</span>杭州黄先生接受了此服务</li>
+            <li><span>4分钟前</span>上海李先生接受了此服务</li>
+          </ul>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
+<div class="save_money">
+  <div style="background:url(images/bj1.png) repeat-x;">
+    <div class="save_banner">
+      <div class="sq_submenu">
+        <ul id="submenu">
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+  <div class="s_07 w980">
+    <div class="wenda fl">
+      <div class="bgf6">
+         <img src="images/img2.png" width="100%">
+      </div>
+    </div>
+    <div class="save_form02 fl">
+      <form>
+        <div class="form_bottom">
+          <dl>
+            <span class="bzsp">地区：</span>
+            <select class="qu fr" id="area">
+              <option value="0">区县</option>
+            </select>
+            <select id="province" url="/api/get_city">
+              <option value="0">省份</option>
+              <option value="1">北京市</option>
+              <option value="2">天津市</option>
+              <option value="3">河北省</option>
+              <option value="4">山西省</option>
+              <option value="5">内蒙古自治区</option>
+              <option value="6">辽宁省</option>
+              <option value="7">吉林省</option>
+              <option value="8">黑龙江省</option>
+              <option value="9">上海市</option>
+              <option value="10">江苏省</option>
+              <option value="11">浙江省</option>
+              <option value="12">安徽省</option>
+              <option value="13">福建省</option>
+              <option value="14">江西省</option>
+              <option value="15">山东省</option>
+              <option value="16">河南省</option>
+              <option value="17">湖北省</option>
+              <option value="18">湖南省</option>
+              <option value="19">广东省</option>
+              <option value="20">广西壮族自治区</option>
+              <option value="21">海南省</option>
+              <option value="22">重庆市</option>
+              <option value="23" selected="selected">四川省</option>
+              <option value="24">贵州省</option>
+              <option value="25">云南省</option>
+              <option value="26">西藏自治区</option>
+              <option value="27">陕西省</option>
+              <option value="28">甘肃省</option>
+              <option value="29">青海省</option>
+              <option value="30">宁夏回族自治区</option>
+              <option value="31">新疆维吾尔族自治区</option>
+              <option value="32">香港</option>
+              <option value="33">澳门</option>
+              <option value="34">台湾省</option>
+            </select>
+            <select id="city" url="/api/get_city">
+              <option value="0">城市</option>
+            </select>
+          </dl>
+          <dl>
+            姓名：<input class="text apply_name" type="text" placeholder="您的称呼">
+            <div class="err_user">请输入您的称呼</div>
+          </dl>
+          <dl>
+            手机：<input class="text apply_tele" type="text" maxlength="11" placeholder="电话号码（必填）"> 
+            <span class="red_dian" style="left: -10px;top: 15px;">*</span>必填
+            <div class="err_tel errbot"><i></i>请输入您的电话号码</div>
+          </dl>
+          <dl>
+            <span class="bzsp">备注：</span> <textarea class="bztextar"></textarea>
+          </dl>
+          <dl>
+            <input class="form_sub" type="button" value="免费发布招标" flag="1">
+          </dl>
+          <dl>
+            <span class="bzsp sm">或拨打：</span> <span class="bzsps">400 8090 405</span> 
+          </dl>
+        </div>
+      </form>
+    </div>
+  </div>
+  
+  <div class="s_05">
+    <div class="save_shi w980">
+      	<img src="images/img3.png" width="100%">
+    </div>
+  </div>
+  <div class="s_06">
+    <div class="save_shi w980 s_06bt">
+    	<div class="mainlist">
+        	<div class="mainlists">
+            	<div class="mainlists1">最新装修招标</div>
+                <div class="mainlists2">业主</div>
+                <div class="mainlists1">户型</div>
+                <div class="mainlists1">面积</div>
+                <div class="mainlists2">装修类型</div>
+                <div class="mainlists1">预算</div>
+                <div class="mainlists2">装修方式</div>
+            </div>
+            <div class="mainlists mainlistc">
+            	<div class="mainlists1">2015/7/5/9:09:09</div>
+                <div class="mainlists2">林女士</div>
+                <div class="mainlists1">三室一厅一卫</div>
+                <div class="mainlists1">85建筑面积平米</div>
+                <div class="mainlists2">普通住宅</div>
+                <div class="mainlists1">具体预算面议</div>
+                <div class="mainlists2">半包</div>
+            </div>
+            <div class="mainlists mainlistc">
+            	<div class="mainlists1">2015/7/5/9:09:09</div>
+                <div class="mainlists2">林女士</div>
+                <div class="mainlists1">三室一厅一卫</div>
+                <div class="mainlists1">85建筑面积平米</div>
+                <div class="mainlists2">普通住宅</div>
+                <div class="mainlists1">具体预算面议</div>
+                <div class="mainlists2">半包</div>
+            </div>
+            <div class="mainlists mainlistc">
+            	<div class="mainlists1">2015/7/5/9:09:09</div>
+                <div class="mainlists2">林女士</div>
+                <div class="mainlists1">三室一厅一卫</div>
+                <div class="mainlists1">85建筑面积平米</div>
+                <div class="mainlists2">普通住宅</div>
+                <div class="mainlists1">具体预算面议</div>
+                <div class="mainlists2">半包</div>
+            </div>
+            <div class="mainlists mainlistc">
+            	<div class="mainlists1">2015/7/5/9:09:09</div>
+                <div class="mainlists2">林女士</div>
+                <div class="mainlists1">三室一厅一卫</div>
+                <div class="mainlists1">85建筑面积平米</div>
+                <div class="mainlists2">普通住宅</div>
+                <div class="mainlists1">具体预算面议</div>
+                <div class="mainlists2">半包</div>
+            </div>
+            <div class="mainlists mainlistc">
+            	<div class="mainlists1">2015/7/5/9:09:09</div>
+                <div class="mainlists2">林女士</div>
+                <div class="mainlists1">三室一厅一卫</div>
+                <div class="mainlists1">85建筑面积平米</div>
+                <div class="mainlists2">普通住宅</div>
+                <div class="mainlists1">具体预算面议</div>
+                <div class="mainlists2">半包</div>
+            </div>
+            <div class="mainlists mainlistc">
+            	<div class="mainlists1">2015/7/5/9:09:09</div>
+                <div class="mainlists2">林女士</div>
+                <div class="mainlists1">三室一厅一卫</div>
+                <div class="mainlists1">85建筑面积平米</div>
+                <div class="mainlists2">普通住宅</div>
+                <div class="mainlists1">具体预算面议</div>
+                <div class="mainlists2">半包</div>
+            </div>
+            <div class="mainlists mainlistc">
+            	<div class="mainlists1">2015/7/5/9:09:09</div>
+                <div class="mainlists2">林女士</div>
+                <div class="mainlists1">三室一厅一卫</div>
+                <div class="mainlists1">85建筑面积平米</div>
+                <div class="mainlists2">普通住宅</div>
+                <div class="mainlists1">具体预算面议</div>
+                <div class="mainlists2">半包</div>
+            </div>
+            <div class="mainlists mainlistc">
+            	<div class="mainlists1">2015/7/5/9:09:09</div>
+                <div class="mainlists2">林女士</div>
+                <div class="mainlists1">三室一厅一卫</div>
+                <div class="mainlists1">85建筑面积平米</div>
+                <div class="mainlists2">普通住宅</div>
+                <div class="mainlists1">具体预算面议</div>
+                <div class="mainlists2">半包</div>
+            </div>
+            <div class="mainlists mainlistc">
+            	<div class="mainlists1">2015/7/5/9:09:09</div>
+                <div class="mainlists2">林女士</div>
+                <div class="mainlists1">三室一厅一卫</div>
+                <div class="mainlists1">85建筑面积平米</div>
+                <div class="mainlists2">普通住宅</div>
+                <div class="mainlists1">具体预算面议</div>
+                <div class="mainlists2">半包</div>
+            </div>
+            <div class="mainlists mainlistc">
+            	<div class="mainlists1">2015/7/5/9:09:09</div>
+                <div class="mainlists2">林女士</div>
+                <div class="mainlists1">三室一厅一卫</div>
+                <div class="mainlists1">85建筑面积平米</div>
+                <div class="mainlists2">普通住宅</div>
+                <div class="mainlists1">具体预算面议</div>
+                <div class="mainlists2">半包</div>
+            </div>
+            <div class="mainlists mainlistc">
+            	<div class="mainlists1">2015/7/5/9:09:09</div>
+                <div class="mainlists2">林女士</div>
+                <div class="mainlists1">三室一厅一卫</div>
+                <div class="mainlists1">85建筑面积平米</div>
+                <div class="mainlists2">普通住宅</div>
+                <div class="mainlists1">具体预算面议</div>
+                <div class="mainlists2">半包</div>
+            </div>
+        </div>
+    </div>
+  </div>
+  <div class="clearfix"></div>
+</div>
+
+<!-- content_zb-->
+<div id="footer">
+  <p class="font12 tbsInfo"> <a rel="nofollow" target="_blank" href="#"> 关于我们 </a> | <a rel="nofollow" target="_blank" href="#"> 联系我们 </a> | <a rel="nofollow" target="_blank" href="#"> 友情链接 </a> | <a rel="nofollow" href="#" target="_blank"> 帮助中心 </a> | <a rel="nofollow" target="_blank" href="#"> 意见反馈 </a> | <a rel="nofollow" href="#" target="_blank"> 高薪聘请</a> | <a href="#" target="_blank"> 法律声明 </a> </p>
+  <p class="font12"> <br>
+    © 2015 Maozs.com &nbsp; 苏州大脸猫网络科技有限公司 &nbsp; 保留所有版权 <br>
+  </p>
+  <p class="font12"> <a href="#">互联网装修</a>&nbsp;&nbsp;&nbsp; <a href="#">中国装修网</a>&nbsp;&nbsp;&nbsp; <a href="#">苏ICP备15010766号-1</a> </p>
+  <p class="font12"> <a rel="nofollow" class="fc1" href="#" target="_blank"></a> <a rel="nofollow" class="fc2" href="#" target="_blank"></a> <a rel="nofollow" class="fc3" href="#" target="_blank"></a> <a rel="nofollow" class="fc4" href="#" target="_blank"></a> </p>
+</div>
+<div class="photo_bottom" >
+	<div class="w1220">
+        <form action="" method="get">
+            <ul>
+                <li>
+                    <label>今日已有<b>435</b>人领取</label>
+                    <div class="form-item"><input name="name" type="text" data-value="您的称呼" value="您的称呼"></div>
+                </li>
+                <li>
+                    <label><div class="photo_err" style="display: none;"><i class=""></i><span>手机号码有误，请输重输入</span></div></label>
+                    <div class="form-item"><input name="tel" type="text" data-value="手机号码( 必填)" value="手机号码( 必填)"></div>
+                </li>
+                <li class="photo_btn_on">
+                    <label></label>
+                    <div><input class="photo_btn" type="button" value="立即免费领取"></div>
+                </li>
+            </ul>
+        </form>
+        <div class="photo_cosle"></div>
+    </div>
+ </div>
+ <div class="photo_bottom_sou">申请免费设计和报价</div>
+</body>
+</html>

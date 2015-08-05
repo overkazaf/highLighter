@@ -22,7 +22,7 @@
             </h4>
          </div>
          <div class="modal-body">
-            <pre class="pre-scrollable" contentEditable>
+            <pre class="pre-scrollable" contentEditable="true">
             		sdafsadfasdf
             		dsfasdf
             		<samp>This text is meant to be treated as sample output from a computer program.</samp>
@@ -78,11 +78,10 @@
 		}).end().modal('show');
 		var oPre = $('#myModal').find('pre.pre-scrollable');
 		oPre.text($(document.body).html()).litelighter({
-		    clone: true,
+		    clone: false,
 		    style : 'dark',
 		    language: 'html'
 		});
-
 	});
 </script>
 </html>
